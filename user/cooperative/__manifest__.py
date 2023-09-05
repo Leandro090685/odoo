@@ -1,6 +1,6 @@
 {
     'name': 'Cooperative Volunteers',
-    'summary': """ Module to organize the work of their volunteers""",
+    'summary': """Module to organize the work of their volunteers""",
     'description': """Module to managing a cooperative shop selling local products""",
         'license': 'OPL-1',
         'author': 'leandro',
