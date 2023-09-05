@@ -9,6 +9,8 @@
         'category': 'Custom Modules/Space',
         'depends':['base'],
         'data':[],
-        'demo': [],
+        'demo': [
+            'demo/spaceship_demo.xml',
+        ],
         'application': True,
 }
