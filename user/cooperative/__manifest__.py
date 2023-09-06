@@ -8,6 +8,8 @@
         'category': 'Custom Modules/Cooperative shop',
         'depends':['base'],
         'data':[],
-        'demo': [],
+        'demo': [
+            'demo/task_demo.xml',
+        ],
         'application': True,
 }

@@ -4,7 +4,7 @@ class Course(models.Model):
     _name = "academy.course"
     _description = "Course Info"
 
-    name = fields.Char(string = "Title", required = True)
+    name = fields.Char(string = "Name", required = True)
     active = fields.Boolean (string="Active", default=True)
 
     description = fields.Text()
