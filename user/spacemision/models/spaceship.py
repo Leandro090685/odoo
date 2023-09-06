@@ -5,7 +5,7 @@ class Spaceship(models.Model):
     _description = "Spaceship Info"
 
     name = fields.Char(string = "name", required=True)
-    active = fields.Boolean(deault=True)
+    active = fields.Boolean(default=True)
     type = fields.Selection(sting='type', 
                             selection=[
                                 ('carga', 'Carga'),

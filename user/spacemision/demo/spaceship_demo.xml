@@ -5,6 +5,7 @@
             <field name="name">Apolo 1</field>
             <field name="type">exploracion</field>
             <field name="model">APL</field>
+            <field name="build_date">02/01/1965</field>
             <field name="captain">Leandro</field>
             <field name="required_crew">5</field>
             <field name="lenght">12,3</field>
