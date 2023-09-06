@@ -5,6 +5,7 @@ class Task(models.Model):
     _description = "Task information"
 
     name = fields.Char(string = "name", required=True)
+
     start_time = fields.Datetime(string = "start time")
     stop_time = fields.Datetime(string = "stop_time")
     occurrences = fields.Integer(default=1)
@@ -13,5 +14,6 @@ class Task(models.Model):
                                  selection = [
                                      ("admin","Admin"),
                                      ("operative","Operative")
-                                     ])
+                                     ],
+                                    copy=False)
     

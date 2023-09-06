@@ -3,24 +3,24 @@
     <data noupdate="1">
         <record id="task_01" model="cooperative.task">
             <field name="name">Leandro</field>
-            <field name="start_time">05/09/2023 08:10:25</field>
-            <field name="stop_time">05/09/2023 09:15:29</field>
+            <field name="start_time">2023-05-20 </field>
+            <field name="stop_time">2023-05-20 </field>
             <field name="occurrences">5</field>
             <field name="description">Capacitation</field>
             <field name="task_type">admin</field>
         </record>
         <record id="task_02" model="cooperative.task">
             <field name="name">Gustavo</field>
-            <field name="start_time">06/09/2023 13:10:25</field>
-            <field name="stop_time">05/09/2023 15:15:29</field>
+            <field name="start_time">2023-05-20 </field>
+            <field name="stop_time">2023-05-20 </field>
             <field name="occurrences">3</field>
             <field name="description">Support</field>
             <field name="task_type">admin</field>
         </record>
         <record id="task_03" model="cooperative.task">
             <field name="name">Alejandro</field>
-            <field name="start_time">01/09/2023 11:10:25</field>
-            <field name="stop_time">05/09/2023 18:15:29</field>
+            <field name="start_time">2023-05-20 </field>
+            <field name="stop_time">2023-05-20 </field>
             <field name="occurrences">3</field>
             <field name="description">Clear</field>
             <field name="task_type">operative</field>

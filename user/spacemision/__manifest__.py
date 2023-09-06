@@ -10,7 +10,7 @@
         'depends':['base'],
         'data':[],
         'demo': [
-            'demo/spaceship_demo.xml',
+            'demo/spaceship_demo.xml'
         ],
         'application': True,
 }

@@ -1,5 +1,5 @@
 {
-    'name': 'Odoo Library',
+    'name': 'Library',
     'summary': """ Module to manage books and customers""",
     'description': """Module to check out, organize and rent books""",
         'license': 'OPL-1',

@@ -15,5 +15,3 @@ class Course(models.Model):
                                  ("advanced", "Advanced"),
                              ],
                              copy=False)
-
-    

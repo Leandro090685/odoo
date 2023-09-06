@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="1">
-        <record id="book_01" model="libraryOdoo.book">
+        <record id="book_01" model="librarypractice.book">
             <field name="name">El Gaucho Martín Fierro</field>
             <field name="isbn">poema</field>
             <field name="genre">Gauchesco</field>
@@ -9,10 +9,10 @@
             <field name="author">Jose Hernandez</field>
             <field name="format">paperback</field>
             <field name="language">es</field>
-            <field name="edition">Imprenta de la Pampa</field>
+            <field name="edition">550</field>
             <field name="publisher">1872</field>
-            <field name="publish_date">05/08/1872</field>
-            <field name="price">2000</field>
+            <field name="publish_date">1872-08-05</field>
+            <!--<field name="price">2000</field>-->
         </record>
     </data>
 </odoo>
