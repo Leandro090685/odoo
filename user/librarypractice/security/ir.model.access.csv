@@ -1,0 +1,4 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+librarypractice_admin,librarypractice admin,model_librarypractice_book,group_librarypractice_admin,1,1,1
+librarypractice_client,librarypractice client,model_librarypractice_book,group_librarypractice_client,1,0,0,0
+librarypractice_read_all,librarypractice read all,model_librarypractice_book,,1,0,0,0

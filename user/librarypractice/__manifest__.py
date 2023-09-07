@@ -7,7 +7,12 @@
         'website': 'www.odoolibrary.com',
         'category': 'Custom Modules/Library',
         'depends':['base'],
-        'data':[],
+        'data':[
+            'security/librarypractice_groups.xml',
+            'security/ir.model.access.csv',
+            'security/librarypractice_security.xml',
+            'views/librarypractice_menuitems.xml',
+        ],
         'demo': [
             'demo/book_demo.xml',
         ],
