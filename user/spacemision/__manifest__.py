@@ -8,7 +8,12 @@
         'website': 'www.odoo.com',
         'category': 'Custom Modules/Space',
         'depends':['base'],
-        'data':[],
+        'data':[
+            'security/spacemision_groups.xml',
+            'security/ir.model.access.csv',
+            'security/spacemision_security.xml',
+            'views/spacemision_menuitems.xml',
+        ],
         'demo': [
             'demo/spaceship_demo.xml'
         ],
