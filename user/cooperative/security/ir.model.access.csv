@@ -1,0 +1,4 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+task_boss,task boss,model_cooperative_task,group_cooperative_boss,1,1,1,1
+task_volunteer,task volunteer,model_cooperative_task,group_cooperative_volunteer,1,1,1,0
+task_read_all,task read all,model_cooperative_task,,1,0,0,0

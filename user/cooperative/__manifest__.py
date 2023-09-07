@@ -7,7 +7,12 @@
         'website': 'www.cooperativeshop.com',
         'category': 'Custom Modules/Cooperative shop',
         'depends':['base'],
-        'data':[],
+        'data':[
+            'security/cooperative_groups.xml',
+            'security/ir.model.access.csv',
+            'security/cooperative_security.xml',
+            'views/cooperative_menuitems.xml',
+        ],
         'demo': [
             'demo/task_demo.xml',
         ],
