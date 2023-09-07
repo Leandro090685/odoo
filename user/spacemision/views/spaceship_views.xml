@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="spaceship_view_form" model="ir.ui.view">
+        <field name="name">space.view.form</field>
+        <field name="model">spacemision.spaceship</field>
+        <field name="arch" type="xml">
+            <form string="Spaceship View">
+                <header></header>
+                <sheet>
+                    <h1><field name="name"/></h1>
+                    <h3><field name="model"/></h3>
+                    <group>
+                        <group>
+                            <separator string="Crew"/>
+                            <field name="captain"/>
+                            <field name="required_crew"/>
+                        </group>
+                        <group>
+                            <separator string = "Spaceship"/>
+                            <field name="type"/>
+                            <field name="build_date"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Specifications">
+                            <group>
+                                <separator string = "Dimensions"/>
+                                <field name="length"/>
+                                <field name="width"/>
+                            </group>
+                            <group>
+                            <separator string = "Motor"/>
+                                <field name="engine_number"/>
+                                <field name="fuel_type"/>
+                            </group>
+
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="spaceship_view_list" model="ir.ui.view">
+        <field name="name">spaceship.view.list</field>
+        <field name="model">spacemision.spaceship</field>
+        <field name="arch" type="xml">
+            <tree string="Spaceship List">
+                <field name="name"/>
+                <field name="model"/>
+                <field name="type"/>
+                <field name="captain"/>
+                <field name="build_date"/>
+                <field name="fuel_type"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="spaceship_view_search" model="ir.ui.view">
+        <field name="name">spaceship.view.search</field>
+        <field name="model">spacemision.spaceship</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="type"/>
+                <field name="captain"/>
+                <filter name="groupby_type" string="Type" context="{'group_by':'type'}"/>
+                <filter name="groupby_model" string="Model" context="{'group_by':'model'}"/>
+                <filter name="groupby_active" string="Active" context="{'group_by':'active'}"/>
+                <filter name="groupby_build_date" string="Build Date" context="{'group_by':'build_date'}"/>
+            </search>
+        </field>
+    </record>
+</odoo>
