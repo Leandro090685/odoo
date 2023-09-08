@@ -27,4 +27,4 @@ class Book(models.Model):
     edition = fields.Integer(string="edition")
     publisher = fields.Char(string = "publisher")
     publish_date = fields.Date(index=True)
-    #price = fields.Monetary(string= "Total")
+    price = fields.Float(string= "Total")

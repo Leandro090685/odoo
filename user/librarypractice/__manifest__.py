@@ -12,6 +12,7 @@
             'security/ir.model.access.csv',
             'security/librarypractice_security.xml',
             'views/librarypractice_menuitems.xml',
+            'views/book_views.xml'
         ],
         'demo': [
             'demo/book_demo.xml',

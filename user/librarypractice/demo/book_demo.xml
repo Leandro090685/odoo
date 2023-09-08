@@ -12,7 +12,7 @@
             <field name="edition">550</field>
             <field name="publisher">1872</field>
             <field name="publish_date">1872-08-05</field>
-            <!--<field name="price">2000</field>-->
+            <field name="price">20.30</field>
         </record>
     </data>
 </odoo>
