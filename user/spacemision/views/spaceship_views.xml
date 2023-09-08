@@ -67,8 +67,8 @@
                 <field name="captain"/>
                 <filter name="groupby_type" string="Type" context="{'group_by':'type'}"/>
                 <filter name="groupby_model" string="Model" context="{'group_by':'model'}"/>
-                <filter name="groupby_active" string="Active" context="{'group_by':'active'}"/>
-                <filter name="groupby_build_date" string="Build Date" context="{'group_by':'build_date'}"/>
+                <filter name="active" string="Active" context="{'filters':'active'}"/>
+                <filter name="build_date" string="Build Date" context="{'filters':'build_date'}"/>
             </search>
         </field>
     </record>

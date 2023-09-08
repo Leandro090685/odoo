@@ -50,9 +50,10 @@
                 <field name="name"/>
                 <field name="description"/>
                 <filter name="groupby_task_type" string="Task Type" context="{'group_by':'task_type'}"/>
-                TODO: <!-- Esta bien el filtro por start time y stop time-->
-                <filter name="start_time" string="Start Time" context="{'filter':'start_time'}"/>
-                <filter name="stop_time" string="Stop Time" context="{'filter':'stop_time'}"/>
+                <!-- Esta bien el filtro por start time y stop time-->
+                <filter name="start_time" string="Start Time" context="{'filters':'start_time'}"/>
+                <filter name="stop_time" string="Stop Time" context="{'filters':'stop_time'}"/>
+                
             </search>
         </field>
     </record>

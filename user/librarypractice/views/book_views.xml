@@ -64,10 +64,9 @@
                 <field name="author"/>
                 <field name="isbn"/>
                 <filter name="groupby_publish_year" string="Publish Year" context="{'group_by':'publish_date'}"/>
-                TODO:<!--Como se hace filtro solo por año, ahora filtra por fecha entera-->
-                <filter name="groupby_genre" string="genre" context="{'group_by':'genre'}"/>
-                <filter name="publish_date" string="filter_publish_date" domain="[('publish_date', '&gt;=', self)]" context="{'group_by': 'publish_date'}"/>
-                TODO:<!-- Verificar si el filtro anda Ok-->
+                <!--Como se hace filtro solo por año, ahora filtra por fecha entera-->
+                <filter name="genre" string="genre" context="{'filters':'genre'}"/>
+                <filter name="publish_date" string="filter_publish_date" context="{'filters': 'publish_date'}"/>
             </search>
         </field>
     </record>
