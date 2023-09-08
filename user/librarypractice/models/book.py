@@ -1,4 +1,6 @@
-from odoo import fields, models
+from odoo import api, fields, models
+from odoo.exceptions import ValidationError
+
 
 class Book(models.Model):
     _name = "librarypractice.book"
@@ -28,3 +30,8 @@ class Book(models.Model):
     publisher = fields.Char(string = "publisher")
     publish_date = fields.Date(index=True)
     price = fields.Float(string= "Total")
+
+    @api.onchange('isbn')
+    def _check_isbn(self):
+        if self.isbn and len(self.isbn)!= 13:
+            raise ValidationError('ISBN must be 13 characters long')
