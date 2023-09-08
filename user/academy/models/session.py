@@ -21,4 +21,8 @@ class Session(models.Model):
                 vals['session_number'] = self.env['ir.sequence'].next_by_code('session.number')
         return super().create(vals_list)
 
-    
+    @api.constrains('date_start', 'date_end')
+    def _check_end_date(self):
+        for session in self:
+            if(session.date_start > session.date_end):
+                raise ValidationError('The end date can not be before the start date')
