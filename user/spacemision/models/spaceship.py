@@ -1,4 +1,5 @@
-from odoo import fields, models
+from odoo import api, fields, models
+from odoo.exceptions import ValidationError
 
 class Spaceship(models.Model):
     _name = "spacemision.spaceship"
@@ -26,3 +27,8 @@ class Spaceship(models.Model):
                                       ('liquid_fuel', 'Liquid Fuel')
                                   ], copy= False)
     
+    @api.constrains('length', 'width')
+    def _check_size(self):
+        for size in self:
+            if(size.width > size.length):
+                raise ValidationError('The width of the spaceship cannot be greater than its length')
