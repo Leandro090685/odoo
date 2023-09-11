@@ -33,5 +33,5 @@ class Book(models.Model):
 
     @api.onchange('isbn')
     def _check_isbn(self):
-        if self.isbn and len(self.isbn)!= 13:
-            raise ValidationError('ISBN must be 13 characters long')
+        if self.isbn and len(self.isbn) > 13:
+            raise ValidationError('The ISBN must be 13 characters or less')
