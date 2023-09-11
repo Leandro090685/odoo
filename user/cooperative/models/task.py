@@ -1,4 +1,5 @@
-from odoo import fields, models
+from odoo import api, fields, models
+
 
 class Task(models.Model):
     _name = "cooperative.task"
@@ -16,4 +17,19 @@ class Task(models.Model):
                                      ("operative","Operative")
                                      ],
                                     copy=False)
-    
+    state = fields.Selection(string = "state",
+                            selection = [
+                                ("draft", "Draft"),
+                                ("in_prgress", "In_progress"),
+                                ("ready","Ready"),
+                                ("ok","Ok")
+                            ], copy=False)
+    leader = fields.Char(string = "leader") 
+
+    @api.onchange('leader')
+     
+    def _check_leader(self):
+        if self.leader != "" and self.state == "draft":
+            self.state = "ready"
+            
+            
