@@ -17,6 +17,9 @@
                             <separator string = "Date"/>
                             <field name="launch_date"/>
                             <field name="return_date"/>
+                            <field name="quantity_fuel"/>
+                            <field name="miles"/>
+                            <field name="number_engine"/>
                         </group>
                     </group>
                 </sheet>
@@ -33,6 +36,9 @@
                 <field name="members_crew"/>
                 <field name="launch_date"/>
                 <field name="return_date"/>
+                <field name="quantity_fuel"/>
+                <field name="miles"/>
+                <field name="number_engine"/>
             </tree>
         </field>
     </record>
@@ -44,6 +50,22 @@
             <search>
                 <field name="name"/>
             </search>
+        </field>
+    </record>
+
+    <record id="mision_view_pivot" model="ir.ui.view">
+        <field name="name">mision.view.pivot</field>
+        <field name="model">spacemision.mision</field>
+        <field name="arch" type="xml">
+            <pivot>
+                <field name="name" type="row"/>
+                <field name ="members_crew" type="row"/>
+                <field name ="number_engine" type="measure"/>
+                <field name ="quantity_fuel" type="measure"/>
+                <field name ="miles" type="measure"/>
+           </pivot>     
+            
+            
         </field>
     </record>
 </odoo>
